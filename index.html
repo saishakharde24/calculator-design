@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-     <title>Calculator</title>
-     <style>
-        .container{
-            height:300px;
-            width:300px;
-            background-color:rgb(180, 54, 96);
-            padding:20px;
+    <title>Calculator</title>
+    <style>
+      @font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
+
+        .container {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(180, 54, 96);
+            padding: 20px;
             border-radius: 10px;
             padding-top: 40px;
         }
 
-       .display-screen{
-            background-color:rgb(161,175,119);
-            font-size:30px;
-            width:280px;
-            padding:5px 10px;
-            display:block;
-            text-align:right;
-            margin-bottom:20px;
+        .display-screen {
+            background-color: rgb(161, 175, 119);
+            font-size: 30px;
+            width: 280px;
+            padding: 5px 10px;
+            display: block;
+            text-align: right;
+            margin-bottom: 20px;
+            font-family: 'DS-Digital Normal';
+        
         }
 
-        .buttons{
+        .buttons {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height:200px;
+            height: 200px;
             flex-direction: column;
             flex-wrap: wrap;
         }
 
-        .button-1{
-            text-align:center;
+        .button-1 {
+            text-align: center;
             padding: 2px 0;
-            width:50px;
-            margin:4px;
-            font-size:20px;
+            width: 50px;
+            margin: 4px;
+            font-size: 20px;
             border-radius: 5px;
-            border:0.5px rgb(11, 11, 11) solid;
+            border: 0.5px rgb(11, 11, 11) solid;
             cursor: pointer;
         }
 
-        .button-1:hover{
-            box-shadow:rgb(11, 11, 11) 0 0 5px;
+        .button-1:hover {
+            box-shadow: rgb(11, 11, 11) 0 0 5px;
         }
 
-        .equal{
-            height:78px;
-            width:50px;
-            background-color:palevioletred;
-            color:rgb(11, 11, 11);
+        .equal {
+            height: 78px;
+            width: 50px;
+            background-color: palevioletred;
+            color: rgb(10, 10, 10);
         }
 
-        .equal:hover{
-            box-shadow:rgb(11, 11, 11) 0 0 5px;
+        .equal:hover {
+            box-shadow: rgb(11, 11, 11) 0 0 5px;
         }
-     </style>
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <input type="text" value="0" class="display-screen"/>
+        <input type="text" value="0" class="display-screen" />
 
         <div class="buttons">
             <button class="button-1">AC</button>
@@ -91,6 +102,7 @@
 
         </div>
     </div>
-    
+
 </body>
+
 </html>
